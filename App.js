@@ -46,7 +46,7 @@ export default function App() {
           select.map((item) => {
             return (
               //key não e  prop,este componente precisa de key individual
-              //boa pratica e so enviar as props ,então descontrair cada prop.  
+              //boa pratica e so enviar apenas as props ,então desconstruir cada prop.  
               <Marker key={item.key} coordinate={item.cords} >
 
                 <Pin color={item.color} aviso={item.text} />
